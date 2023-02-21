@@ -1,5 +1,5 @@
 <resources>
-    <string name="appname">APP LADOS</string>
+    <string name="app_name">APP LADOS</string>
     <string name="lado_uno">LADO UNO</string>
     <string name="lado_dos">LADO DOS</string>
     <string name="calcular">CALCULAR</string>

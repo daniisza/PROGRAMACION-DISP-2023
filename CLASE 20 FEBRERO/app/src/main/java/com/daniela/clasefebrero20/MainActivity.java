@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.i(TAG, "Estoy en OnCreate");
-        ladouno = findViewById(R.id.lado_uno);
-        ladodos  = findViewById(R.id.lado_dos);
+        ladouno = findViewById(R.id.ladouno);
+        ladodos  = findViewById(R.id.ladodos);
         resultado = findViewById(R.id.elresultadoes);
         calcular = findViewById(R.id.calcular);
     }
@@ -31,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.i(TAG, "Entré a OnStart");
+        calcular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float ladouno1 = Float.parseFloat(ladouno.getText().toString());
+                float ladodos2 = Float.parseFloat(ladodos.getText().toString());
+                float resultadof = ladouno1*ladodos2;
+                resultado.setText(String.valueOf(resultadof));
+            }
+        });
     }
 
     @Override

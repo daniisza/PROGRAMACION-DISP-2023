@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/appname">
+            android:text="@string/app_name">
 
         </TextView>
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/lado_uno"
+
             android:text="@string/lado_uno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -40,10 +40,11 @@
         </TextView>
 
         <EditText
+            android:id="@+id/ladouno"
             android:hint="Ingrese el lado uno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:layout_weight="1">
 
         </EditText>
 
@@ -54,15 +55,16 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/lado_dos"
+
             android:text="@string/lado_dos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="2">
 
         </TextView>
 
         <EditText
+            android:id="@+id/ladodos"
             android:hint="Ingrese el lado dos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
