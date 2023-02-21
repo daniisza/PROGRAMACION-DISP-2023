@@ -31,6 +31,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/lado_uno"
             android:text="@string/lado_uno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -53,6 +54,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/lado_dos"
             android:text="@string/lado_dos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -75,11 +77,11 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/elresultadoes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/apptitulo"
-            android:textColor="">
+            android:text="@string/apptitulo">
 
         </TextView>
 
@@ -93,10 +95,10 @@
 
 
         <Button
+            android:id="@+id/calcular"
             android:text="@string/calcular"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
         </Button>
     </LinearLayout>

@@ -4,10 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     String TAG = "Depuracion";
-
+    EditText ladouno, ladodos;
+    TextView resultado;
+    Button calcular;
 
 
     @Override
@@ -16,7 +21,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.i(TAG, "Estoy en OnCreate");
-
+        ladouno = findViewById(R.id.lado_uno);
+        ladodos  = findViewById(R.id.lado_dos);
+        resultado = findViewById(R.id.elresultadoes);
+        calcular = findViewById(R.id.calcular);
     }
 
     @Override
