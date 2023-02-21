@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">CLASE FEBRERO 20</string>
+    <string name="appname">APP LADOS</string>
+    <string name="lado_uno">LADO UNO</string>
+    <string name="lado_dos">LADO DOS</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="apptitulo">EL RESULTADO ES:</string>
+
 </resources>
