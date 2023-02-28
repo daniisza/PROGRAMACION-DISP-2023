@@ -4,5 +4,9 @@
     <string name="lado_dos">LADO DOS</string>
     <string name="calcular">CALCULAR</string>
     <string name="apptitulo">EL RESULTADO ES:</string>
+    <string name="name_pant2">SEGUNDA PANTALLA</string>
+    <string name="namelado_uno">RESULTADO LADO UNO</string>
+    <string name="namelado_dos">RESULTADO LADO DOS</string>
+    <string name="btn_result">BOTON RESULTADO</string>
 
 </resources>
