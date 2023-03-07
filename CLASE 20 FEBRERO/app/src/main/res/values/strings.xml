@@ -8,5 +8,7 @@
     <string name="namelado_uno">RESULTADO LADO UNO</string>
     <string name="namelado_dos">RESULTADO LADO DOS</string>
     <string name="btn_result">BOTON RESULTADO</string>
+    <string name="Google">ABRIR GOOGLE</string>
+    <string name="llamar">LLAMAR</string>
 
 </resources>

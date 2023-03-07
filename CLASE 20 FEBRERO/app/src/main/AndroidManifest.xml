@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.CALL_PHONE"/> //AQUI SE DEFINE EL PERMISO CUANDO LA APP SE INSTALE
 
     <application
         android:allowBackup="true"
