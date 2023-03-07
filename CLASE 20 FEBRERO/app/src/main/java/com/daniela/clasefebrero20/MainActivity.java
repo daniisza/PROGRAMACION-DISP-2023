@@ -119,10 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void IraLlamada(View view) {
-        Intent abrirGoogle = new Intent(Intent.ACTION_VIEW);
-        abrirGoogle.setData(Uri.parse("http://www.google.com"));
-        startActivity(abrirGoogle);
-    }
+
+    
 }
 
