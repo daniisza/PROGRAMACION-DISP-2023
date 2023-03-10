@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EntregableApp</string>
+    <string name="nombre">Nombres Y Apellidos</string>
+    <string name="duracion">Duración cita</string>
+    <string name="servicio">Servicio</string>
+    <string name="agendar">Agendar</string>
+
+</resources>
