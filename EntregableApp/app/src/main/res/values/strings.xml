@@ -4,5 +4,13 @@
     <string name="duracion">Duración cita</string>
     <string name="servicio">Servicio</string>
     <string name="agendar">Agendar</string>
+    <string name="Ira">Ir A</string>
+    <string name="Ir">Ir A  Otro</string>
+    <string name="mostrarn">mostrar nombre</string>
+    <string name="mostrard">mostrar duracion</string>
+    <string name="mostrars">mostrar servicio</string>
+    <string name="calendar">Calendario</string>
+
+
 
 </resources>
