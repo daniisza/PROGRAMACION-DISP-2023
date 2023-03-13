@@ -25,9 +25,9 @@ public class PantallaDos extends AppCompatActivity {
         mostrard = findViewById(R.id.idmostrard);
         mostrars = findViewById(R.id.idmostrars);
         calendar = findViewById(R.id.idcalendar);
-        String result1 =  getIntent().getStringExtra("elnombre");
-        String result2 =  getIntent().getStringExtra("laduración");
-        String result3 =  getIntent().getStringExtra("lacita");
+        String result1 =  getIntent().getStringExtra("mostrarn");
+        String result2 =  getIntent().getStringExtra("mostrard");
+        String result3 =  getIntent().getStringExtra("mostrars");
         Parte2EnviarDatos (result1,result2, result3);
 
 
@@ -40,6 +40,7 @@ public class PantallaDos extends AppCompatActivity {
     }
 
     public void Parte2EnviarDatos(String result1, String result2, String result3) {
+        Log.i(TAG,"vALIDACIÓN DATOS" + result1 + " "+result2+ " "+result3);
         mostrarn.setText(result1);
         mostrard.setText(result2);
         mostrars.setText(result3);
