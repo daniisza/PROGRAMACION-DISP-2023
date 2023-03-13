@@ -20,9 +20,9 @@ public class PantallaDos extends AppCompatActivity {
         mostrard = findViewById(R.id.idmostrard);
         mostrars = findViewById(R.id.idmostrars);
         web = findViewById(R.id.idirweb);
-        String result1 = mostrarn.getText().toString();
-        String result2 = mostrard.getText().toString();
-        String result3 = mostrars.getText().toString();
+        String result1 =  getIntent().getStringExtra("elnombre");
+        String result2 =  getIntent().getStringExtra("laduración");
+        String result3 =  getIntent().getStringExtra("lacita");
         Parte2EnviarDatos (result1,result2, result3);
 
 
