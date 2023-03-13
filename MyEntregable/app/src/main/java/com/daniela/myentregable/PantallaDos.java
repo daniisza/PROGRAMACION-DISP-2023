@@ -36,22 +36,7 @@ public class PantallaDos extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        calendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void addEvent (String title, String location, long begin, long end) {
-                Intent IraCalendario = new Intent(Intent.ACTION_INSERT);
-                IraCalendario.setData(CalendarContract.Events.CONTENT_URI);
-                IraCalendario.putExtra(CalendarContract.Events.TITLE,title );
-                IraCalendario.putExtra(CalendarContract.Events.EVENT_LOCATION, location);
-                IraCalendario.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, end);
-                if (IraCalendario.resolveActivity(getPackageManager()) != null) {
-                    startActivity(IraCalendario);
 
-
-                }
-
-            }
-        });
     }
 
     public void Parte2EnviarDatos(String result1, String result2, String result3) {
