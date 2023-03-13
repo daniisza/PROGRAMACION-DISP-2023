@@ -54,10 +54,13 @@ public class MainActivity extends AppCompatActivity {
         String servi = servic.getText().toString();
 
         if (servi.equals("semipermanente")) {
-            Intent i = new Intent(MainActivity.this, PantallaDos.class);
-            i.putExtra("mostrarn", nombre.getText().toString());
-            i.putExtra("mostrard", durar.getText().toString());
-            i.putExtra("mostrars", servic.getText().toString());
+            String resultlado1 = nombre.getText().toString();
+            String resultlado2 = durar.getText().toString();
+            String resultlado3 = servic.getText().toString();
+            Intent i = new Intent(this, PantallaDos.class);
+            i.putExtra("mostrarn", resultlado1);
+            i.putExtra("mostrard", resultlado2);
+            i.putExtra("mostrars", resultlado3);
             startActivity(i);
 
         } else if (servi.equals("")) {

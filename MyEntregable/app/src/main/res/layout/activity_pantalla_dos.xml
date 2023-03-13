@@ -56,18 +56,6 @@
             android:text="@string/calendar" />
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/idirweb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/web" />
-    </LinearLayout>
-
 
     <ImageView
         android:id="@+id/imageView3"
