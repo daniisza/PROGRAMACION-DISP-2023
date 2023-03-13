@@ -3,47 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/app_name">
-
-        </TextView>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-
-            android:text="@string/lado_uno"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-        </TextView>
-
         <EditText
-            android:id="@+id/ladouno"
-            android:hint="Ingrese el lado uno"
+            android:id="@+id/idnombre"
+            android:hint="Nombre Y Apellidos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:gravity="center"
             android:layout_weight="1">
 
         </EditText>
@@ -54,87 +30,93 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-
-            android:text="@string/lado_dos"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2">
-
-        </TextView>
-
         <EditText
-            android:id="@+id/ladodos"
-            android:hint="Ingrese el lado dos"
+            android:id="@+id/iddurar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:text="@string/durar"
+            android:gravity="center"
+            android:layout_weight="1">
 
         </EditText>
 
     </LinearLayout>
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/idservic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/servic"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/idagendar"
+            android:text="@string/agendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/abrir_web"
+            android:text="@string/web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/ir_apag"
+            android:text="@string/pag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/elresultadoes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/apptitulo">
-
-        </TextView>
-
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="273dp"
+            android:layout_height="114dp"
+            app:srcCompat="@mipmap/spa" />
 
     </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-
-        <Button
-            android:id="@+id/calcular"
-            android:text="@string/calcular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </Button>
-
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-
-        <Button
-            android:id="@+id/abrir_google"
-            android:text="@string/Google"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </Button>
-
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-
-        <Button
-            android:id="@+id/abrir_llamar"
-            android:text="@string/llamar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </Button>
-
-    </LinearLayout>
-    </LinearLayout>
+</LinearLayout>

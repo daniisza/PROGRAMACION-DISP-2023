@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,11 +13,14 @@
         android:orientation="horizontal">
     <EditText
         android:id="@+id/idnombre"
+        android:hint="Ingrese el nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="@string/nombre" />
+        android:text="@string/nombre"
+       />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -26,21 +30,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="@string/duracion" />
+        android:text="@string/duracion" />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <EditText
         android:id="@+id/idservicio"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
+        android:text="@string/servicio"
         android:hint="@string/servicio"
         tools:ignore="Suspicious0dp" />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -57,23 +64,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/Ira"
+            android:id="@+id/idIra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/Ira" />
+            android:text="@string/Ira"/>
     </LinearLayout>
     <LinearLayout
-
+        android:id="@+id/idIr"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/Ir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/Ir" />
+            android:text="@string/Ir"/>
     </LinearLayout>
     <LinearLayout
         android:gravity="center"

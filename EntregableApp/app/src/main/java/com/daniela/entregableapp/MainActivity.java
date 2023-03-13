@@ -1,5 +1,6 @@
 package com.daniela.entregableapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button agendar,Ir, Ira;
     EditText nombre, duracion, servicio;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,44 +26,35 @@ public class MainActivity extends AppCompatActivity {
         duracion = findViewById(R.id.idduracion);
         servicio = findViewById(R.id.idservicio);
         agendar = findViewById(R.id.idagendar);
-        Ir = findViewById(R.id.Ir);
-        Ira = findViewById(R.id.Ira);
+        Ir = findViewById(R.id.idIr);
+        Ira = findViewById(R.id.idIra);
         agendar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
 
+
                 String servi = servicio.getText().toString();
 
                 if (servi.equals("semipermanente")) {
                     Intent i = new Intent(MainActivity.this, Pantalla2App.class);
-                    i.putExtra("Linea22", Linea2.getText().toString());
+                    i.putExtra("mostrarn", nombre.getText().toString());
+                    i.putExtra("mostrard", duracion.getText().toString());
+                    i.putExtra("mostrars", servicio.getText().toString());
                     startActivity(i);
 
-                } else if (nume.equals("")) {
-                    Toast.makeText(MainActivity.this, "Debe ingresar un numero", Toast.LENGTH_SHORT).show();
+                } else if (servi.equals("")) {
+                    Toast.makeText(MainActivity.this, "Debes ingresar el nombre semipermanente", Toast.LENGTH_SHORT).show();
 
-                } else{
+
+
 
                 }
             }
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i(TAG, "Entré a OnStart");
-        agendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Parte2EnviarDatos(view);
-            }
-        });
 
-    }
-    public void Parte2EnviarDatos(View view) {
 
-    }
 }
 

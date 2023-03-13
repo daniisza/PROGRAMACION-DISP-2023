@@ -1,17 +1,13 @@
 <resources>
-    <string name="app_name">EntregableApp</string>
+    <string name="app_name">MyEntregable</string>
     <string name="nombre">Nombres Y Apellidos</string>
-    <string name="duracion">Duración cita</string>
-    <string name="servicio">Servicio</string>
+    <string name="durar">Duración cita</string>
+    <string name="servic">Servicio</string>
     <string name="agendar">Agendar</string>
-    <string name="Ir">Ir A</string>
-    <string name="Ira">Ir A  Otro</string>
     <string name="mostrarn">mostrar nombre</string>
     <string name="mostrard">mostrar duracion</string>
     <string name="mostrars">mostrar servicio</string>
     <string name="calendar">Calendario</string>
     <string name="web">Ir a web</string>
-
-
-
+    <string name="pag">Ir a pag</string>
 </resources>
