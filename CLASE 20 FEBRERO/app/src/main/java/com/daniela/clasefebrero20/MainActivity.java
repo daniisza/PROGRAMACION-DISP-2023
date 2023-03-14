@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 IraGooogle(view);  //NOMBRE DE LA FUNCION, VA IR A UNA FUNCION
             }
         });
+
         abrirLlamada.setOnClickListener(new View.OnClickListener() {
             //OTRA FORMA DE HACER EL INTENT DIRECTAMENTE
             @Override
@@ -118,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(abrirGoogle);
 
     }
-
 
 
 }

@@ -14,9 +14,6 @@ public class PantallaDos extends AppCompatActivity {
     TextView resulfinal;
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
