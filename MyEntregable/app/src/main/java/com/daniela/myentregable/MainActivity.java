@@ -76,10 +76,35 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("mostrars", resultlado3);
                 startActivity(i);
 
-            } else if (servi.equals("")) {
-                Toast.makeText(MainActivity.this, "Debes ingresar el nombre semipermanente", Toast.LENGTH_SHORT).show();
-
-
+            } else if (servi.equals("tradicional")) {
+                String resultlado1 = nombre.getText().toString();
+                String resultlado2 = durar.getText().toString();
+                String resultlado3 = servic.getText().toString();
+                Intent i = new Intent(this, PantallaDos.class);
+                i.putExtra("mostrarn", resultlado1);
+                i.putExtra("mostrard", resultlado2);
+                i.putExtra("mostrars", resultlado3);
+                startActivity(i);
+            } else if (servi.equals("acrilica")) {
+                String resultlado1 = nombre.getText().toString();
+                String resultlado2 = durar.getText().toString();
+                String resultlado3 = servic.getText().toString();
+                Intent i = new Intent(this, PantallaDos.class);
+                i.putExtra("mostrarn", resultlado1);
+                i.putExtra("mostrard", resultlado2);
+                i.putExtra("mostrars", resultlado3);
+                startActivity(i);
+            } else if (servi.equals("gel")) {
+                String resultlado1 = nombre.getText().toString();
+                String resultlado2 = durar.getText().toString();
+                String resultlado3 = servic.getText().toString();
+                Intent i = new Intent(this, PantallaDos.class);
+                i.putExtra("mostrarn", resultlado1);
+                i.putExtra("mostrard", resultlado2);
+                i.putExtra("mostrars", resultlado3);
+                startActivity(i);
+            }else {
+                Toast.makeText(MainActivity.this, "Por favor ingresar un servicio para uñas", Toast.LENGTH_SHORT).show();
             }
         }
     }
