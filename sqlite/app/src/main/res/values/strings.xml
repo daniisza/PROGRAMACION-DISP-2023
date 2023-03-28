@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sqlite</string>
+    <string name="basedatos">BASE DE DATOS SQLITE</string>
+    <string name="digCed">Digite La Cédula</string>
+    <string name="digNom">Digite El Nombre</string>
+    <string name="digTel">Digite El Telefono</string>
+    <string name="reg">REGISTRAR</string>
+    <string name="Con">CONSULTAR</string>
+
+</resources>
