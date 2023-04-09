@@ -5,6 +5,6 @@
     <string name="digNom">Digite El Nombre</string>
     <string name="digTel">Digite El Telefono</string>
     <string name="reg">REGISTRAR</string>
-    <string name="Con">CONSULTAR</string>
+    <string name="con">CONSULTAR</string>
 
 </resources>
