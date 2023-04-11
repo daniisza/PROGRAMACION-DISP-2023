@@ -6,16 +6,19 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     private EditText etyusuario;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         etyusuario=(EditText)findViewById(R.id.etyusuario);
+        button=findViewById(R.id.button);
 
         SharedPreferences preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);
         etyusuario.setText(preferences.getString("usuarios", ""));
