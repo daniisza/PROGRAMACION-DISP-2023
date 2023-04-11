@@ -28,6 +28,20 @@ public class MainActivity extends AppCompatActivity {
         digTel = findViewById(R.id.digTel);
         reg = findViewById(R.id.reg);
         con = findViewById(R.id.con);
+
+        reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                registrar(view);
+            }
+        });
+        con.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                consultar(view);
+            }
+        });
+
     }
 
     public void registrar(View view) {
@@ -53,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese correctamente todos los datos", Toast.LENGTH_LONG).show();
         }
     }
+
 
     public void consultar(View view) {
         AdminBD admin = new AdminBD(this, "BaseDatos", null, 1);
